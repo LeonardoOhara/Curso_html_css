@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        
+        body{
+            font-family: 'Work Sans', Courier, sans-serif;
+            /* Medidas Absolutas 
+               cm, mm, in, px, pt, pc
+
+            medidas relativas
+                em, ex, rem, vw, vh, %
+                16px geralmente = 1em
+
+            */
+            
+            /* ligther normal bold bolder */
+            text-align: left;
+            
+        }
+
+        h1{
+
+            /*font-family: 'Works Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+
+            /* shorthand font 
+
+            - font-style -> font-weight -> font-size -> font-family */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans', sans-serif;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Medidas Absolutas</h1>
+    <p>As medidas absolutas têm tamanhos fixos, independentes de outros elementos da página ou da tela do usuário. Elas não mudam em relação ao tamanho da tela ou das configurações do navegador. Aqui estão as mais comuns:</p>
+    <ul>
+        <p>px (pixels) Unidade comum para definir tamanhos exatos. 1px é sempre igual a um pixel na tela.</p>
+        <p>cm (centímetros): Usado para definir tamanhos em centímetros reais. Geralmente usado em impressão.</p>
+        <p>mm (milímetros): Tamanhos em milímetros reais. Também mais usado em impressão.</p>
+        <p>in (polegadas): Define tamanhos em polegadas. Uma polegada equivale a 2,54 cm.</p>
+        <p>pt (pontos):Usado em tipografia, onde 1pt é 1/72 de uma polegada.</p>
+        <p>pc (picas): Outra medida tipográfica, onde 1pc é igual a 12pt.</p>
+    </ul>
+
+
+    <h1>Medidas Relativas</h1>
+    <p>As medidas relativas são flexíveis e se adaptam ao tamanho de outros elementos, como a tela do usuário ou elementos pai. Elas são essenciais para designs responsivos. Aqui estão algumas das mais comuns:</p>
+    <ul>
+        <p>em (em unidades): Relativo ao tamanho da fonte do elemento pai. Se o tamanho da fonte do elemento pai for 16px, 2em seria 32px.</p>
+        <p>ex (ex units): Define o tamanho da fonte como um relativo ao primeiro caractere do elemento.</p>
+        <p>rem (root em units): Relativo ao tamanho da fonte da raiz (normalmente o elemento <html>). Isso mantém a consistência, independentemente do contexto em que é usado.</p>
+        <p>vw (viewport width):Relativo à largura da janela de visualização. 1vw é 1% da largura da tela.</p>
+        <p>vh (viewport height): Relativo à altura da janela de visualização. 1vh é 1% da altura da tela.</p>
+        <p>% Relativo ao tamanho do elemento pai. Por exemplo, width: 50% define a largura do elemento como metade da largura do elemento pai.</p>
+        <p>vmin/vmax: vmin é igual ao menor valor entre a largura ou altura da tela; vmax é igual ao maior valor entre eles.</p>
+    </ul>
+</body>
+</html>

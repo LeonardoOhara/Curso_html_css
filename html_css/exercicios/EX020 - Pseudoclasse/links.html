@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(15, 88, 64);
+        }
+
+        a:active{
+            color:yellow;
+        }
+
+        a:hover {
+            color: darkblue;
+            text-decoration: underline;
+        }
+
+        .especial {
+            background-color: bisque;
+        }
+
+        .especial::after {
+            content: " - Acessado recentemente";
+            font-size: 12px;
+            color: grey;
+            margin-left: 5px;
+        }
+
+        .especial::before {
+            content: " - ja acessou";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/LeonardoOhara" target="_blank">Repositorio Github</a></li>
+        <li><a href="https://www.youtube.com/@leonardoohara"target="_blank" class="especial">Canal Youtube</a></li>
+        <li><a href="https://www.instagram.com/leonardoohara/"target="_blank">Instagram</a></li>
+    </ul>
+</body>
+</html>

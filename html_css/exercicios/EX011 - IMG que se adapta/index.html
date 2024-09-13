@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro exercicio.</title>
+</head>
+<body>
+    <h1>Imagem dinânica</h1>
+    
+    <p>Teste para abrir esse site em diversos dispositivos </p>
+    
+    <picture>
+        <source media="(min-width: 600px )" srcset="imagens/foto2.png" type="image/png">
+        <source media="(max-width: 1080px)" srcset="imagens/foto1.png" type="image/png">
+        <img src="imagens/foto3.png" alt="Foto">  <!-- imagem padrão caso nenhum dispositivo seja compatível -->
+    </picture>
+
+
+    
+</body>
+</html>
