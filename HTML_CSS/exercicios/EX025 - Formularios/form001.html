@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: burlywood;
+            text-align: center;
+        }
+
+        form {
+            margin: auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <p>Lembrar sempre de adicionar a Tag Label em formulários.</p>
+    <p>Usar o GET em dados menos sensiveis Ex: nome, sobrenome etc.</p>
+    <p>Usar o POST em dados mais sensiveis Ex: senhas , endereço , envio de arquivo etc.</p>
+    <p>Para uma melhor segurança estudar sobre HTTPS</p>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!--Sempre adicionar a tag Label em formularios-->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type = "submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
