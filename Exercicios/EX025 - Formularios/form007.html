@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="formulario.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---escolha---</option>
+                <optgroup label="Região Susdeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <option value="ES">Espírito Santo</option>
+                <option value="BA">Bahia</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="AM">Amazonas</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="CE">Ceará</option>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="profissoes">
+
+            <datalist id="profissoes">
+                <option value="Analista de Sistemas">Analista de Sistemas</option>
+                <option value="Engenheiro de Software">Engenheiro de Software</option>
+                <option value="Programador">Programador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg"> Mensagem: </label><br>
+            <textarea name="msg" id="imsg" rows="5" cols="30"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
